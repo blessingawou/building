@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>building.com</title>
+    <link rel="stylesheet" href="building.css">
+    <style>
+        *
+{
+    margin: 0;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(201, 213, 218);
+    /* height: 100vh; */
+    border-bottom: 50px solid green;
+    border-top-left-radius :100% ;
+
+}
+.container
+{
+    position: relative;
+}
+.foundation
+{
+    width: 250px;
+    height: 40px;
+    background-color : rgb(13, 12, 14) ;
+    margin-top: 600px;
+    margin-left: 950px;
+
+}
+.wall 
+{
+    width:250px;
+    height: 400px;
+    background-color: skyblue;
+    position: absolute;
+    margin-top: -430px;
+    margin-left: 950px;
+    border-bottom: 30px solid black;
+}
+.window1
+{
+     width: 70px;
+     height: 90px;
+     border: 4px solid #ffff;
+     background-color: rgb(18, 132, 231);
+     position: absolute;
+     margin-top: 260px;
+     margin-left: 45px;
+     box-shadow: 3px 3px 10px 0px white;
+}
+.window2
+{
+     width: 70px;
+     height: 90px;
+     border: 4px solid #ffff;
+     background-color: rgb(18, 132, 231);
+     position: absolute;
+     margin-top: 260px;
+     margin-left: 130px;
+     box-shadow: 3px 3px 10px 0px white;
+}
+.window3
+{
+     width: 70px;
+     height: 90px;
+     border: 4px solid #ffff;
+     background-color: rgb(18, 132, 231);
+     position: absolute;
+     margin-top: 50px;
+     margin-left: 45px;
+     box-shadow: 3px 3px 10px 0px white;
+}
+.window4
+{
+     width: 70px;
+     height: 90px;
+     border: 4px solid #ffff;
+     background-color: rgb(18, 132, 231);
+     position: absolute;
+     margin-top: 50px;
+     margin-left: 130px;
+     box-shadow: 3px 3px 10px 0px white;
+}
+.line1
+{
+      position: absolute;
+      width: 270px;
+      height: 10px;
+      background-color:rgb(241, 237, 245) ;
+      margin-top: 200px;
+}
+.roof
+{
+    position: absolute;
+    width: 300px;
+    height: 25px;
+    background-color:rgb(13, 12, 14) ;
+    margin-top: 0px;
+    margin-left: -25px;
+}  
+.paint
+{
+    width: 250px;
+    height: 200px;
+    background-color: rgb(13, 12, 14);
+}
+.mainroof
+{
+     width: 250px;
+     height: 100px;
+     background-color: skyblue;
+     position: absolute;
+     margin-top: -250px;
+     border-top-left-radius: 50%;
+     border-top-right-radius: 50%;
+     z-index: -1;
+}
+.bridge
+{
+    width: 950px;
+    height: 40px;
+    background-color: gray;
+    margin-top: -250px;
+    position: absolute;
+    box-shadow: 0px 10px 0px 0px black;
+    z-index: -1;
+}
+.line2
+{
+     position: absolute;
+     width: 950px;
+     height: 10px;
+     border: 7px dashed white;
+     border-top: none;
+     border-left: none;
+     border-right: none;
+     padding-top: 10px;
+}
+ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.bar
+{
+     width: 5px;
+     height: 50px;
+     background-color: black;
+     position: absolute;
+     margin-top: -300px;
+     margin-left: 200px;
+     z-index: -1;
+}
+ .side {
+    display: flex;
+}
+.crossbar
+{
+     width: 950px;
+     height: 5px;
+     background-color: black;
+     position: absolute;
+     margin-top: -300px;
+     z-index: -1;
+}
+.pillar
+{
+     width: 100px;
+     height: 150px;
+     background-color: rgb(48, 43, 43);
+     margin-top: -200px;
+     margin-left: 400px;
+     z-index: -1;
+     position: absolute;
+}
+.pillarstand
+{
+     width: 200px;
+     height: 80px;
+     background-color: black;
+     position: absolute;
+     margin-top: 150px;
+     margin-left: -50px;
+     z-index: -1;
+}
+.bird
+{
+     width: 50px;
+     margin-top: -450px;
+     position: absolute;
+     animation-name: bird;
+     animation-duration: 35s;
+     animation-iteration-count: infinite;
+     animation-timing-function:linear;
+     animation-delay: 1s;
+     z-index: -1;
+     margin-left: -50px;
+}
+@keyframes bird
+     {
+        from { transform:translate(-50px); }
+        to {transform: translate(1300px);}
+     }
+     .man 
+     {
+        width: 120px;
+        position: absolute;
+        margin-top: -300px;
+        z-index: -1;
+        animation-name: man;
+        animation-duration: 20s;
+        animation-timing-function: linear;
+        /* animation-iteration-count: infinite; */
+        animation-fill-mode: forwards;
+     }
+     @keyframes man 
+     {
+        from {transform: translate(-100px);}
+        to{transform: translate(950px);}
+     }
+    .door
+    {
+        width: 50px;
+        height: 90px;
+        position: absolute;
+        background-color: skyblue;
+        margin-top: -330px;
+        margin-left: 900px;
+        transform: rotatey(20deg);
+        animation-name: door;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-delay: 19s;
+        animation-iteration-count: 1;
+   }
+    span
+    {
+         color: black;
+         font-size: 30px;
+         position: absolute;
+         margin-top: 25px;
+         text-align: center;
+    }
+    @keyframes door
+    {
+        from{ transform: rotatey(0deg);}
+        to{transform: rotatey(90deg);
+           margin-left: 926px;}
+    }
+         
+    </style>
+</head>
+<body>
+    <div class="container">
+         <div class="foundation"></div>
+         <div class="wall">
+            <div class="window1"></div>
+            <div class="window2"></div>
+            <div class="line1"></div>
+            <div class="window3"></div> 
+            <div class="window4"></div> 
+            <div class="roof">
+                <p style="color: white; margin-left: 100px;"><strong> TECH HUB </strong></p>
+            </div>
+            <div class="paint"></div>
+            <div class="mainroof"></div>
+    </div>
+    <div class="bridge">
+        <div class="line2"></div>
+    </div>
+    <div class="side"> 
+        <ul>
+            <li" class="bar"></li>
+            <li style="margin-top: 0px;" class="bar"></li>
+            <li style="margin-top: 0px;margin-left: 400px;" class="bar"></li>
+            <li style="margin-top: 0px;margin-left: 300px;" class="bar"></li>
+            <li style="margin-top: 0px;margin-left: 100px;" class="bar"></li>
+            <li style="margin-top: 0px;margin-left: 500px;" class="bar"></li>
+            <li style="margin-top: 0px;margin-left: 600px;" class="bar"></li>
+            <li style="margin-top: 0px;margin-left: 700px;" class="bar"></li>
+            <li style="margin-top: 0px;margin-left: 790px;" class="bar"></li>
+        </ul>
+    </div>
+    <div class="crossbar"></div>
+    <div class="pillar">
+        <div class="pillarstand"></div>
+    </div>
+    </div>
+     <img class="bird" src="images/iflux/r2.gif" alt="">
+     <img class="man" src="images/iflux/walk.gif" alt="">
+     <div class="door">
+        <span><strong>.]</strong></span>
+     </div>
+     <!-- <audio src="file:///C:/Users/HP/Downloads/mixkit-atmosphere-of-a-river-at-sunrise-2458.wav" controls> </audio> -->
+</body>
+</html>
